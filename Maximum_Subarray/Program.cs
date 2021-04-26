@@ -9,6 +9,7 @@ namespace Maximum_Subarray
         {
             int size = 10000000;
             int[] A = RandomIntArray(size, 0, int.MaxValue);
+            // FindMaximumSubarray returns start index, end index, maximum sum respectively.
             Console.WriteLine($"FindMaximumSubarray:{FindMaximumSubarray(A, 0, A.Length-1)}");
             Console.WriteLine($"Kadane:{Kadane(A)}");
             Console.ReadKey();
